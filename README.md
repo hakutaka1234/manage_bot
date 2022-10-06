@@ -1,12 +1,9 @@
 <h4><p align="center"> 〲༆ʜᴀᴋᴜ ᴀʟɪᴠᴇ ༇〺 </p></h4>
 
 <p align="center">
-
-  <img src="https://graph.org/file/a4d8ec008094e0e71cbda.jpg">
-
 </p>
 
-<p align="center">
+
 
 <a href="https://t.me/gemini_hakutakaa"> <img src="https://img.shields.io/badge/Haku-Robot-blue?&logo=telegram" alt="HakuRobot on Telegram" /> </a><br>
 
@@ -21,3 +18,4 @@
 </p>
 #Heroku
 <p><a href="https://heroku.com/deploy?template=https://hakutaka1234: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@github.com/hakutaka1234/manage_bot.git""><img src="https://img.shields.io/badge/DEPLOY TO WEB-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p align="center">
