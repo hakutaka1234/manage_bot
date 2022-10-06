@@ -1,0 +1,218 @@
+{
+      "name": "HakutakaRobot",
+      "description": "A Powerful  Telegram group management bot with anime theme.",
+      "stack": "heroku-22",
+      "keywords": [
+         "telegram",
+         "advance",
+         "group",
+         "manager",
+         "HakutakaRobot"
+      ],
+    
+   "logo":    "https://telegra.ph/file/a807460d64ac73c5dc83a.jpg",  
+   "repository": "https://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@github.com/hakutaka1234/HakutakaRobot",
+   "addons": [
+          {
+         "options": {
+            "version": "13"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],  
+   "env": {
+      "TOKEN": {
+         "description": "Masukan Bot Token kamu silahkan buat di @BotFather",
+         "required": true,
+         "value": "5440517341:AAHhDzQ8Hn4rBIbXaPszXQu9pTGs7aYxa6Y"
+      },
+      "API_ID": {
+         "description": "Dapatkan API_ID dari my.telegram.org, digunakan untuk modul berbasis telethon.",
+         "required": true,
+         "value": "17278438"
+      },
+      "API_HASH": {
+         "description": "Dapatkan API_HASH dari my.telegram.org, digunakan untuk modul berbasis telethon.",
+         "required": true,
+         "value": "7886b64c08117902bf1aaff07280b512"
+      },    
+      "OWNER_ID": {
+         "description": "Masukan Id Akun Tele Kamu.",
+         "required": true,
+         "value": "1954780613"
+     },
+
+      "STRING_SESSION": {
+         "description": "Masukan String Telethon ambil string di bot @CilikStringBot.",
+         "required": true,
+         "value": "1BVtsOMMBuwIa7MOLH06w9L4B7g9XCLXO-YsYOxHBG391x6uHPDfp_K6OMt1BcMd8lnUVOFsgEbfDFS_y-ZIrmLYnyVYLcql8zt-NWGEop-974JzFeRO7Wtb9ey1Fa2apNq4plMBavoAd1fawjRfsBSRbhN6Q9LUPML0PH7C8QPFVBC96b1cEAlDAf6bcQ_sPZaEFUAArkpSrAgPX9O4EYMWl9yk-lW8mtx_6TI5SyBzXmkv3Cqqwa15p9EJfDTxcEt0zBb2ML1Q0eqs0ULWChimhlWzZEj_0n7IfgaprM_dhOo-xLFrg0OVSHf01QEJiX0DGEwXhN_ki0tF45Z5r8Bd563HwwQI=" 
+      },
+      "HEROKU_API_KEY": {
+        "description": "Heroku API KEY Anda, dapatkan dari 'https://dashboard.heroku.com/account'",
+        "value": "62c150e7-fa9c-4c6c-bd13-08e525e64a31"
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Masukkan nama aplikasi Heroku di sini (samain dengan nama yang kamu isi pertama).",
+        "required": false
+      },
+      "BOT_USERNAME": {
+         "description": "Username bot Anda tanpa @",
+         "value": "HakutakaRobot"
+      },
+      "BOT_ID": {
+         "description": "Masukan Id Bot Anda",
+         "value": "5440517341"
+      },
+
+      "OWNER_USERNAME": {
+         "description": "Username Anda tanpa @",
+         "value": "gemini_hakutakaa"
+      },
+      "SUPPORT_CHAT": {
+         "description": "Masukan Username Grup Anda, Masukan Tanpa @.",
+         "required": true,
+         "value": "alivenotalliance"
+      },
+      "MONGO_DB_URI": {
+         "description": "Masukan MongoDb Database, Dapatkan di (MongoDB.com).",
+         "required": true,
+         "value": "mongodb+srv://hakumusickmekibot:eNeRA310798@hakuanjir.b8ttnya.mongodb.net/?retryWrites=true&w=majority"
+      },
+      "IBM_WATSON_CRED_URL": {
+         "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
+         "required": false
+     },
+     "IBM_WATSON_CRED_PASSWORD": {
+        "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
+        "required": false
+     },
+     "EVENT_LOGS": {
+         "description": "Masukan Id Grup Logs, Buatlah Grup Publik dan masukan bot anda, id grup pakai awalan -100",
+         "required": true,
+         "value": "-1001686544997"
+      },
+      "JOIN_LOGGER": {
+         "description": "Masukan Id Grup, bisa disamakan dengan vars event logs diatas.",
+         "required": true,
+         "value": "-1001686544997"
+      },      
+      "CASH_API_KEY": {
+         "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
+         "required": true,
+         "value": "9HLRVYSUNY1EQEKB"
+      },
+      "TIME_API_KEY": {
+         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
+         "required": true,
+         "value": "MHCCEF9DHQDV"
+     }, 
+
+      "OPENWEATHERMAP_ID": {
+        "description": "Get your own API from https://api.openweathermap.org/data/2.5/weather",
+        "value": "207dc895a1692943463a7e76cbe5bcc8",
+        "required": false
+      },
+
+      "DEV_USERS": {
+         "description": "ID pengguna yang merupakan Pengembang bot Anda (dapat menggunakan /py dll.). Jika Anda seorang noob dan akan datang dan mengganggu dukungan Masha maka simpan ID saat ini di sini dan tambahkan milik Anda.",
+         "required": false,
+         "value": "1954780613"
+     },
+      "ERROR_LOG": {
+         "description": "ID of log for show error.",
+         "required": false,
+         "value": "1954780613"
+     },
+        "ARQ_API_KEY": {
+            "description": "Dapatkan ini dari @ARQRobot.",
+            "required": false,
+            "value": "WZUJJH-MSBTKJ-NUFTNA-XVVSOJ-ARQ"
+        },
+
+      "SPAMWATCH_API": {
+         "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
+         "required": false,
+         "value": "7uGFiAfdrcjaDaLEv2j~qp~25NxnldP54OTqh8ZdAlhSe6E7GXEL~HlmR~f0saOb"
+      }, 
+      "STRICT_GBAN": {
+         "description": "Terapkan gban di seluruh grup baru dan juga grup lama. Saat pengguna yang diblokir berbicara, dia akan diblokir.",
+         "value": "True"
+      },
+      "DRAGONS": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai pengguna sudo.",
+         "required": false,
+         "value": "1954780613"
+      },
+      "DEMONS": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai pengguna dukungan (khusus izin gban).",
+         "required": false,
+         "value": "1954780613"
+      },
+      "TIGERS": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai pengguna harimau.",
+         "required": false,
+         "value": "1954780613"
+      },
+      "WOLVES": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai daftar putih - tidak dapat diblokir dengan bot Anda.",
+         "required": false,
+         "value": "1954780613"
+      },
+      "ENV": {
+         "description": "Menyetel ini ke APA SAJA akan mengaktifkan variabel lingkungan. Biarkan apa adanya",
+         "value": "ANYTHING"
+      },
+      "WEBHOOK": {
+         "description": "Menyetel ini ke APA SAJA akan mengaktifkan webhook. Jika Anda tidak tahu cara kerjanya, biarkan apa adanya",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "Port yang akan digunakan untuk webhook Anda. Lebih baik biarkan ini seperti di heroku",
+         "required": false,
+         "value": ""
+      },
+      "URL": {
+         "description": "URL Aplikasi Heroku :- https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "NO_LOAD": {
+         "description": "Jangan memuat modul ini karena mereka sial, pemisahan ruang",
+         "required": false,
+         "value": "rss"
+      }, 
+      "BL_CHATS": {
+         "description": "Daftar obrolan yang ingin Anda daftar hitam.",
+         "required": false,
+         "value": ""
+      },
+      "ALLOW_EXCL": {
+         "description": "Setel ini ke True jika Anda mau ! menjadi awalan perintah bersama dengan /. Direkomendasikan Benar",
+         "value": "True"
+      },
+      "DONATION_LINK": {
+         "description": "Donasi",
+         "required": false,
+         "value": "@gemini_hakutakaa"
+      },
+      "DEL_CMDS": {
+         "description": "Setel ini ke True jika Anda ingin menghapus pesan perintah dari pengguna yang tidak memiliki izin untuk menjalankan perintah itu.",
+         "value": "True"
+      },
+      "WALL_API": {
+         "description": "Diperlukan untuk wallpaper. Dapatkan milik Anda dari https://wall.alphacoders.com/",
+         "required": false,
+         "value": ""
+      }
+      
+   }
+}
