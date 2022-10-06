@@ -1,9 +1,15 @@
+import asyncio
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from HakutakaRobot import telethn as tbot
 from HakutakaRobot.events import register
 from HakutakaRobot import ubot2 as ubot
 from asyncio.exceptions import TimeoutError
-
+from telethon.errors import BadRequestError
+from telethon.errors.rpcerrorlist import ChatNotModifiedError, UserIdInvalidError
+from telethon.tl.functions.channels import EditAdminRequest, GetFullChannelRequest
+from telethon.tl.functions.messages import GetFullChatRequest, SetHistoryTTLRequest
+from telethon.tl.types import InputMessagesFilterPinned
+from telethon.utils import get_display_name
 
 @register(pattern="^/sg ?(.*)")
 async def lastname(steal):
@@ -56,3 +62,20 @@ async def lastname(steal):
             )
     except TimeoutError:
         return await puki.edit("`I'm Sick Sorry...`")
+@register(
+    pattern="^/purgeall ?(.*)",
+)
+async def _(e):
+    if not e.is_reply:
+        return await eod(
+            e,
+            get_string("purgeall_1"),
+        )
+
+    msg = await e.get_reply_message()
+    name = msg.sender
+    try:
+        await e.client.delete_messages(e.chat_id, from_user=msg.sender_id)
+        await e.eor(get_string("purgeall_2").format(name.first_name), time=5)
+    except Exception as er:
+        return await e.eor(str(er), time=5)
