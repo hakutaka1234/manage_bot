@@ -20,5 +20,4 @@
 
 </p>
 #Heroku
-
-https://heroku.com/deploy?template=https://hakutaka1234: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@github.com/hakutaka1234/manage_bot.git
+<p><a href="https://heroku.com/deploy?template=https://hakutaka1234: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@github.com/hakutaka1234/manage_bot.git""><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
