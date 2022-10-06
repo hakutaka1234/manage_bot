@@ -32,17 +32,17 @@
       "TOKEN": {
          "description": "Masukan Bot Token kamu silahkan buat di @BotFather",
          "required": true,
-         "value": "@BotFather"
+         "value": "5440517341:AAHhDzQ8Hn4rBIbXaPszXQu9pTGs7aYxa6Y"
       },
       "API_ID": {
          "description": "Dapatkan API_ID dari my.telegram.org, digunakan untuk modul berbasis telethon.",
          "required": true,
-         "value": "Example : 17****"
+         "value": "17278438"
       },
       "API_HASH": {
          "description": "Dapatkan API_HASH dari my.telegram.org, digunakan untuk modul berbasis telethon.",
          "required": true,
-         "value": "Example : 78****"
+         "value": "7886b64c08117902bf1aaff07280b512"
       },    
       "OWNER_ID": {
          "description": "Masukan Id Akun Tele Kamu.",
@@ -53,11 +53,11 @@
       "STRING_SESSION": {
          "description": "Masukan String Telethon ambil string di bot @CilikStringBot.",
          "required": true,
-         "value": "Take It On @hshhsjsjsboybot" 
+         "value": "1BVtsOMMBuwIa7MOLH06w9L4B7g9XCLXO-YsYOxHBG391x6uHPDfp_K6OMt1BcMd8lnUVOFsgEbfDFS_y-ZIrmLYnyVYLcql8zt-NWGEop-974JzFeRO7Wtb9ey1Fa2apNq4plMBavoAd1fawjRfsBSRbhN6Q9LUPML0PH7C8QPFVBC96b1cEAlDAf6bcQ_sPZaEFUAArkpSrAgPX9O4EYMWl9yk-lW8mtx_6TI5SyBzXmkv3Cqqwa15p9EJfDTxcEt0zBb2ML1Q0eqs0ULWChimhlWzZEj_0n7IfgaprM_dhOo-xLFrg0OVSHf01QEJiX0DGEwXhN_ki0tF45Z5r8Bd563HwwQI=" 
       },
       "HEROKU_API_KEY": {
         "description": "Heroku API KEY Anda, dapatkan dari 'https://dashboard.heroku.com/account'",
-        "value": "Open Your Heroku App"
+        "value": "62c150e7-fa9c-4c6c-bd13-08e525e64a31"
       },
       "HEROKU_APP_NAME": {
         "description": "Masukkan nama aplikasi Heroku di sini (samain dengan nama yang kamu isi pertama).",
@@ -69,7 +69,7 @@
       },
       "BOT_ID": {
          "description": "Masukan Id Bot Anda",
-         "value": "54****"
+         "value": "5440517341"
       },
 
       "OWNER_USERNAME": {
