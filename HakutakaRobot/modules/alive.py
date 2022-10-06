@@ -9,7 +9,7 @@ from HakutakaRobot.events import register
 from HakutakaRobot import telethn as tbot
 from HakutakaRobot import BOT_USERNAME as bu
 
-PHOTO = None
+PHOTO = "False"
 
 @register(pattern=("/alive"))
 async def awake(event):
