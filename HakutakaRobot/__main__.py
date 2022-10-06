@@ -83,27 +83,24 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://graph.org/file/a4d8ec008094e0e71cbda.jpg)
+㊝ I'am Robot [㊝](https://telegra.ph/file/f9bbe99067b9750861818.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+㊝ Hit /help to see my available commands.
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="+ᴀᴅᴅ  ᴍᴇ  ɪɴ  ʏᴏᴜʀ  ɢʀᴏᴜᴘ+", url=f"t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="Get Help ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Support 💌", url=f"t.me/{SUPPORT_CHAT}"
+            text="ɢʀᴏᴜᴘ", url=f"t.me/{SUPPORT_CHAT}"
         ),
-    ],
-    [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name} 🤖", callback_data="haku_"),
     ],
 ]
 
@@ -230,7 +227,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f" Hi, I'm {dispatcher.bot.first_name}. Nice to meet You...",
             parse_mode=ParseMode.HTML
        )
 
