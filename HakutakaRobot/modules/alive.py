@@ -9,7 +9,6 @@ from HakutakaRobot.events import register
 from HakutakaRobot import telethn as tbot
 from HakutakaRobot import BOT_USERNAME as bu
 
-PHOTO = "https://telegra.ph/file/a7546d43199b90f1bfd6d.jpg"
 @register(pattern="^/alive ?(.*)")
 async def awake(event):
   Haku = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm ʜᴀᴋᴜ** \n\n"
@@ -20,4 +19,4 @@ async def awake(event):
   Haku += f"㊝ **Pyrogram Version :** `{pyrover}` \n\n"
   Haku += "**Thanks For Adding Me Here**"
   BUTTON = [[Button.url("ʜᴇʟᴘ", f"https://t.me/{bu}?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/alivenotalliance")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=Haku,  buttons=BUTTON)
+  await tbot.send_messages(event.chat_id, caption=Haku,  buttons=BUTTON)
