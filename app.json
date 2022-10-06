@@ -133,7 +133,8 @@
      },
         "ARQ_API_KEY": {
             "description": "Dapatkan ini dari @ARQRobot.",
-            "required": true
+            "required": false,
+            "value": "WZUJJH-MSBTKJ-NUFTNA-XVVSOJ-ARQ"
         },
 
       "SPAMWATCH_API": {
