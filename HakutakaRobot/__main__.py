@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-㊝ I'am Robot [㊝](https://telegra.ph/file/f9bbe99067b9750861818.jpg)
+㊝ I'am Robot)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -107,8 +107,6 @@ buttons = [
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
-
-haku_IMG = "https://graph.org/file/a4d8ec008094e0e71cbda.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @gemini_hakutakaa \
