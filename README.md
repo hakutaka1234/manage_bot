@@ -19,3 +19,6 @@
 <a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.4-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
 
 </p>
+#Heroku
+
+https://heroku.com/deploy?template=https://hakutaka1234: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@github.com/hakutaka1234/manage_bot.git
