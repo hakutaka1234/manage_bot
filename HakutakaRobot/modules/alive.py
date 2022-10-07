@@ -19,4 +19,4 @@ async def awake(event):
   Haku += f"㊝ **Pyrogram Version :** `{pyrover}` \n\n"
   Haku += "**Thanks For Adding Me Here**"
   BUTTON = [[Button.url("ʜᴇʟᴘ", f"https://t.me/{bu}?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/alivenotalliance")]]
-  await tbot.send_messages(event.chat_id, caption=Haku,  buttons=BUTTON)
+  await tbot.client.get_messages(event.chat_id, caption=Haku,  buttons=BUTTON)
