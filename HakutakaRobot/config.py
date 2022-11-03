@@ -25,7 +25,7 @@ LOGGER = True
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
-    MONGO_DB_URI = ""
+    MONGO_DB_URI = "mongodb+srv://kyymusicfthaku:eNeRA310798@cluster0kyybotmusicftha.perxvb8.mongodb.net/?retryWrites=true&w=majority"
     ARQ_API_KEY = "WZUJJH-MSBTKJ-NUFTNA-XVVSOJ-ARQ"
     URL = None
     SPAMWATCH_API = "7uGFiAfdrcjaDaLEv2j~qp~25NxnldP54OTqh8ZdAlhSe6E7GXEL~HlmR~f0saOb"  # go to support.spamwat.ch to get key
