@@ -8,6 +8,7 @@ LOGGER = True
     API_ID = 17278438  # integer value, dont use ""
     API_HASH = "7886b64c08117902bf1aaff07280b512"
     TOKEN = "5622516770:AAFZ3jZV0WU1fFY5GpNF1ba2GPg_4VTpDN8"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    STRING_SESSION = ""
     OWNER_ID = 1954780613  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "gemini_hakutaka"
     SUPPORT_CHAT = "evzesda"  # Your own group for support, do not add the @
